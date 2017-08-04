@@ -32,6 +32,7 @@ body, html {
 
 html {
   background: rgb(15, 15, 15);
+  min-width: 980px;
 }
 
 a, select, button, Link:hover {
@@ -122,6 +123,12 @@ h2 {
   color: white;
 }
 
+.instruction {
+  letter-spacing: 2px;
+  margin: 15px 0;
+  font-size: 13px;
+}
+
 .link-text:hover {
   color: #57CDFF;
 }
@@ -129,7 +136,9 @@ h2 {
 .control {
   width: 80%;
   margin: 15px auto;
-  
+
   display: flex;
   justify-content: space-between;
+
+  letter-spacing: 4px;
 }
