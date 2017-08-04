@@ -36,7 +36,11 @@ html {
 
 a, select, button, Link:hover {
   cursor: pointer;
+  color: #57CDFF;
 }
+
+/*font import*/
+@font-face { font-family: Visitor; src: url('../fonts/visitor1.ttf'); }
 
 /*grid making*/
 
@@ -54,7 +58,7 @@ a, select, button, Link:hover {
 .left-nav, .right-nav {
   width: 200px;
   padding: 10px;
-  margin: 10px;
+  margin: 0 20px;
 
   display: flex;
   flex-direction: column;
@@ -91,10 +95,33 @@ h2 {
   border-bottom: 1px solid white;
 }
 
+/*left-nav*/
+
+.score {
+  font-family: Visitor;
+  color: #57CDFF;
+  font-size: 30px;
+}
+
 .legend-list-item {
   width: 80%;
   margin: 15px auto;
 
   display: flex;
   justify-content: space-between;
+}
+
+/*right-nav*/
+
+.link {
+  margin: 20px 0px;
+}
+
+.link-text {
+  letter-spacing: 4px;
+  color: white;
+}
+
+.link-text:hover {
+  color: #57CDFF;
 }
