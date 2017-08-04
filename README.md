@@ -20,22 +20,28 @@ In this game, players will be able to:
 - [ ] View their current score
 - [ ] Finish the game upon collision with a space mine
 
-### Motion of the player and bombs
+### Ship and Mine Physics
 
-To simulate motion through space, I created a vector class that handles setting the direction and magnitude of vectors. Th
+![Vector Code Excerpt](assets/images/physics_code.png)
+A sample of the vector physics.
 
-### Images
 
-The layout for the game will be a single screen with a game field at the center, a link to an (optional to gameplay) about modal, a left sidebar displaying their current score and existing high scores (bonus), and a right sidebar with links to the creator's relevant materials as well as a legend for the gem values.
+To simulate motion through space, SpaceThief contains a vector class that accurately handles setting the direction and magnitude of vectors. Closely following equations of motion, the game combines original and resultant vectors of both mines and the ship to create a lifelike simulation of movement through space.
 
-A display of the arrow keys will also feature at the bottom left of the board to make the UI intuitive
+### User Interface and Design
 
-![wireframes](images/wireframe.png)
+![Gameplay](assets/images/gameplay.png)
+SpaceThief in action!
+
+
+SpaceThief UI has an appealing, clean layout. The game itself is centered. The left sidebar displays the user's current score and a legend containing gem icons and their corresponding point values. The right sidebar contains links to the developer's personal pages, instructions, and controls.
+
+#### Original Wireframe
+![wireframes](assets/images/wireframe.png)
 
 ### Architecture and Technologies
 
-
-The major technologies to be utilized in creating this game are:
+SpaceThief was made with several key technologies:
 
 - JavaScript and the `jquery` library for overall structure and game logic,
 - an adaptation of [Marco Monster's Car Physics](http://www.asawicki.info/Mirror/Car%20Physics%20for%20Games/Car%20Physics%20for%20Games.html) to handle the control of the spaceship
@@ -43,7 +49,7 @@ The major technologies to be utilized in creating this game are:
 - Specifically, the `Easel.js` library, in concert with `HTML5 Canvas,` handles collision detection and resolution.
 - Webpack to bundle and serve up the various scripts.
 
-In addition to the webpack entry file, there will be three scripts involved in this project:
+In addition to the webpack entry file, the project involves three scripts:
 
 
 * `Physics` (`lib/physics.js`)
@@ -98,7 +104,6 @@ Setup all necessary Node modules, including getting webpack up and running and `
 
 ### Bonus features
 
-Bonus features include:
+To heighten the excitement of SpaceThief, future features may include:
 
-- [ ] Adding a heat-seaking-like functionality to space mines by adding gravitational fields.
 - [ ] Adding a high-score tracking feature that stores user data.
