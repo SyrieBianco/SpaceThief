@@ -2,11 +2,13 @@
 
 ### Background
 
-SpaceThief is an arcade style game based on collecting tokens and avoiding space mines. The player will navigate a ship to collect space rocks in randomly generated positions and of varying value. Upon the collection of each space rock, a moving space mine will generate; as a bonus, the space mine will be sensitive to the gravitational fields of the player's spaceship and the space rocks, thus tracking the player and her targets.
+SpaceThief is an arcade style game based on collecting tokens and avoiding space mines. The player navigates a ship via thrust and left-right steering to collect space rocks in randomly generated positions and of varying value. Upon the collection of each space rock, a moving space mine will generate. The space mines are sensitive to the gravitational fields of the player's spaceship, thus tracking the player.
+
+The space mines will explode upon collision with another mine, and they will detonate each other. They will also explode when colliding with the player, thereby ending the game
 
 The player must collect as many space rocks as possible without detonating the ever-increasing number of mines.
 
-### Functionality & MVP  
+### Functionality  
 
 In this game, players will be able to:
 
@@ -15,12 +17,11 @@ In this game, players will be able to:
 - [ ] View their current score
 - [ ] Finish the game upon collision with a space mine
 
-Additionally, this project will include:
+### Motion of the player and bombs
 
-- [ ] An About modal describing the background and rules of the game
-- [ ] A production Readme
+To create gravitational sensitivity,
 
-### Wireframes
+### Images
 
 The layout for the game will be a single screen with a game field at the center, a link to an (optional to gameplay) about modal, a left sidebar displaying their current score and existing high scores (bonus), and a right sidebar with links to the creator's relevant materials as well as a legend for the gem values.
 
