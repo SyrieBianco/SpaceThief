@@ -98,10 +98,21 @@ h2 {
 
 /*left-nav*/
 
-.score {
+.score-render {
+  margin: 25px 0;
+}
+#score-padding {
+  font-family: Visitor;
+  color: gray;
+  font-size: 30px;
+  display: inline;
+}
+
+#score {
   font-family: Visitor;
   color: #57CDFF;
   font-size: 30px;
+  display: inline;
 }
 
 .legend-list-item {
