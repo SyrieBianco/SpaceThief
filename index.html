@@ -8,28 +8,68 @@
     <script type="application/javascript" src="lib/bundle.js"></script>
 
     <script type="application/javascript" src="license/ndgmr.Collision.js"></script>
-
     <script type="application/javascript" src="lib/util.js"></script>
-
     <script type="application/javascript" src="lib/vector.js"></script>
-
     <script type="application/javascript" src="lib/game_object.js"></script>
-
     <script type="application/javascript" src="lib/ship.js"></script>
-
     <script type="application/javascript" src="lib/gem.js"></script>
-
     <script type="application/javascript" src="lib/gem_util.js"></script>
-
     <script type="application/javascript" src="lib/mine.js"></script>
-
     <script type="application/javascript" src="lib/game.js"></script>
-
     <script type="application/javascript" src="lib/space_thief.js"></script>
 
     <link rel="stylesheet" type='text/css' href="assets/stylesheets/game.css"/>
   </head>
-  <body onload="init();">
-    <canvas id="gameCanvas" width="500" height="500" style="background: black;"></canvas>
+
+
+  <body class="container" onload="init();">
+    <header class="header">
+      <h1 class="title">SPACETHIEF</h1>
+    </header>
+
+    <div class="main">
+      <section class="left-nav">
+        <h2>YOUR SCORE</h2>
+
+        <figure class="legend">
+          <h2>LEGEND</h2>
+          <ul class="legend-list">
+
+            <li class="legend-list-item"><img src="assets/images/gem1.png" alt="gem 1, 1000 points"/> 1000 pts</li>
+
+            <li class="legend-list-item"><img src="assets/images/gem2.png" alt="gem 2, 800 points"/> 800 pts</li>
+
+            <li class="legend-list-item"><img src="assets/images/gem3.png" alt="gem 3, 500 points"/> 500 pts</li>
+
+            <li class="legend-list-item"><img src="assets/images/gem4.png" alt="gem 4, 300 points"/> 300 pts</li>
+
+            <li class="legend-list-item"><img src="assets/images/gem5.png" alt="gem 5, 200 points"/> 200 pts</li>
+
+            <li class="legend-list-item"><img src="assets/images/gem6.png" alt="gem 6, 100 points"/> 100 pts</li>
+
+          </ul>
+        </figure>
+      </section>
+
+      <section class="gameboard">
+        <canvas id="gameCanvas" width="500" height="500" style="background: black;"></canvas>
+      </section>
+
+      <section class="right-nav">
+        <h2>DEVELOPER INFO</h2>
+        <ul class="links">
+          <li class="link">Portfolio</li>
+          <li class="link">LinkedIn</li>
+          <li class="link">GitHub</li>
+          <li class="link">AngelList</li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+    </footer>
+
   </body>
+
+
 </html>
