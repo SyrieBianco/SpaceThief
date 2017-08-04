@@ -1,8 +1,12 @@
 ## SpaceThief
 
 ### Background
+Live: [SpaceThief](https://syriebianco.github.io/SpaceThief/)
 
-SpaceThief is an arcade style game based on collecting tokens and avoiding space mines. The player navigates a ship via thrust and left-right steering to collect space rocks in randomly generated positions and of varying value. Upon the collection of each space rock, a moving space mine will generate. The space mines are sensitive to the gravitational fields of the player's spaceship, thus tracking the player.
+
+[Github](https://github.com/ravisraval/BlingRunner)
+
+SpaceThief is an arcade style game based on collecting tokens and avoiding space mines. The player navigates a ship via thrust and left-right steering to collect space rocks in randomly generated positions and of varying value. Upon collection of each space rock, a moving space mine will generate. The space mines are sensitive to the gravitational fields of the player's spaceship, thus tracking the player.
 
 The space mines will explode upon collision with another mine, and they will detonate each other. They will also explode when colliding with the player, thereby ending the game
 
@@ -19,7 +23,7 @@ In this game, players will be able to:
 
 ### Motion of the player and bombs
 
-To create gravitational sensitivity,
+To simulate motion through space, I created a vector class that handles setting the direction and magnitude of vectors. Th
 
 ### Images
 
