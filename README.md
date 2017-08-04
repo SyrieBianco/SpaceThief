@@ -6,11 +6,10 @@ Live: [SpaceThief](https://syriebianco.github.io/SpaceThief/)
 
 [Github](https://github.com/ravisraval/BlingRunner)
 
-SpaceThief is an arcade style game based on collecting tokens and avoiding space mines. The player navigates a ship via thrust and left-right steering to collect space rocks in randomly generated positions and of varying value. Upon collection of each space rock, a moving space mine will generate. The space mines are sensitive to the gravitational fields of the player's spaceship, thus tracking the player.
+SpaceThief is an arcade style game based on collecting tokens and avoiding space mines. The player must collect as many space rocks as possible without detonating the ever-increasing number of mines. The player navigates a ship via thrust and left-right rotational steering to collect space rocks in randomly generated positions and of varying value. Upon collection of each space rock, a moving space mine will generate. Space mines are sensitive to the gravitational fields of the player's spaceship, thus tracking the player.
 
-The space mines will explode upon collision with another mine, and they will detonate each other. They will also explode when colliding with the player, thereby ending the game
+Functionally, space mines explode upon collision with another mine. An explosion will also occur if the ship collides with a mine, instantly causing the player to lose.
 
-The player must collect as many space rocks as possible without detonating the ever-increasing number of mines.
 
 ### Functionality  
 
@@ -40,8 +39,8 @@ The major technologies to be utilized in creating this game are:
 
 - JavaScript and the `jquery` library for overall structure and game logic,
 - an adaptation of [Marco Monster's Car Physics](http://www.asawicki.info/Mirror/Car%20Physics%20for%20Games/Car%20Physics%20for%20Games.html) to handle the control of the spaceship
-- The Create.js suite for sound and animation
-- Specifically, the `Easel.js` with `HTML5 Canvas` to handle collision detection and resolution.
+- The Create.js suite for sound, image display, and animation.
+- Specifically, the `Easel.js` library, in concert with `HTML5 Canvas,` handles collision detection and resolution.
 - Webpack to bundle and serve up the various scripts.
 
 In addition to the webpack entry file, there will be three scripts involved in this project:
